@@ -1,0 +1,49 @@
+.coin-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(var($--theme-primary), 0.85);
+    margin-bottom: 0.3rem;
+  }
+
+  &__row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__name {
+    min-width: 30%;
+    font-size: 1.3rem;
+    color: rgba(var($--theme-primary), 0.6);
+
+    @include breakpoint(900px) {
+      min-width: 20%;
+    }
+  }
+
+  &__links {
+    display: inline-block;
+    text-align: left;
+    word-break: break-all;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(var($--theme-primary), 0.85);
+    background-color: rgba(var($--theme-primary), 0.1);
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      color: $color-green;
+      background-color: rgba(var($--theme-primary), 0.15);
+    }
+  }
+}

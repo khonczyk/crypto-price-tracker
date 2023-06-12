@@ -1,0 +1,17 @@
+.settings {
+  padding: 0.6rem;
+
+  &__theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: rgba(var($--theme-primary), 0.6);
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(var($--theme-primary));
+    }
+  }
+}

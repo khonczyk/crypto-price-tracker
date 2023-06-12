@@ -1,0 +1,27 @@
+.coin-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.6rem;
+
+  &__cell {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(var($--theme-primary), 0.2);
+  }
+
+  &__name {
+    font-size: 1.3rem;
+    color: rgba(var($--theme-primary), 0.6);
+  }
+
+  &__value {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(var($--theme-primary));
+  }
+
+  @include breakpoint(700px) {
+    grid-template-columns: 1fr;
+  }
+}

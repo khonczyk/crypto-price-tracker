@@ -1,0 +1,65 @@
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  &__container {
+    max-width: 14.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+
+    background-color: rgba(var($--theme-primary), 0.12);
+  }
+
+  &__container:hover &__icon {
+    color: rgb(var($--theme-primary));
+  }
+
+  &__container:hover &__input::placeholder {
+    color: rgb(var($--theme-primary));
+  }
+
+  &__icon {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    color: rgba(var($--theme-primary), 0.6);
+    background-color: transparent;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: inherit;
+    color: rgb(var($--theme-primary));
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: rgba(var($--theme-primary), 0.6);
+    }
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba($color-green, 0.8);
+    color: rgba($color-green, 0.8);
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-green;
+      border-color: $color-green;
+    }
+  }
+}

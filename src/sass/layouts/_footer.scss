@@ -1,0 +1,28 @@
+.footer {
+  font-size: 1.3rem;
+  color: rgba(var($--theme-primary), 0.6);
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__logo {
+    height: 4rem;
+  }
+
+  &__disclaimer {
+    font-size: 1.6rem;
+    text-decoration: underline;
+
+    & a {
+      padding-left: 0.4rem;
+      color: $color-green;
+
+      &:hover {
+        color: $color-green-dark;
+      }
+    }
+  }
+}

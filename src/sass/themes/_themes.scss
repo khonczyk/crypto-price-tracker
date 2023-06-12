@@ -1,0 +1,18 @@
+// !!-------PLEASE NOTE-------!!
+// They were used VALUES FOR THE COLOR and NOT THE COLOR ITSELF.
+// The reason for that is that variables for plain CSS don't work with RGBA function and we can't define opacity for them later.
+// -----------------------------
+
+// Dark theme (default)
+body.dark {
+  #{$--theme-background}: 18, 18, 18;
+  #{$--theme-primary}: 255, 255, 255;
+  #{$--theme-on-background}: 24, 24, 24;
+}
+
+// Light theme
+body.light {
+  #{$--theme-background}: 255, 255, 255;
+  #{$--theme-primary}: 18, 18, 18;
+  #{$--theme-on-background}: 248, 248, 248;
+}

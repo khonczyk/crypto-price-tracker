@@ -1,0 +1,27 @@
+.summary {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 0.5rem;
+    list-style: none;
+    font-size: 1.1rem;
+    color: rgba(var($--theme-primary), 0.6);
+  }
+
+  &__info {
+    padding: 0 0.3rem;
+
+    &--green {
+      color: $color-green;
+    }
+
+    &--red {
+      color: $color-red;
+    }
+
+    &--blue {
+      color: $color-blue;
+    }
+  }
+}

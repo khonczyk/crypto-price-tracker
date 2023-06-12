@@ -1,0 +1,32 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 0.8rem 0;
+
+  & a {
+    height: 4rem;
+  }
+
+  &__logo {
+    height: 4rem;
+  }
+
+  // &__list {
+  //   display: flex;
+  //   list-style: none;
+  //   gap: 2.4rem;
+
+  //   & li {
+  //     color: rgba(var($--theme-primary), 0.85);
+  //     font-size: 1.4rem;
+  //     line-height: 1.25rem;
+  //     font-weight: 500;
+  //     cursor: pointer;
+
+  //     &:hover {
+  //       color: $color-green;
+  //     }
+  //   }
+  // }
+}

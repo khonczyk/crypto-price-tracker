@@ -1,0 +1,11 @@
+.chart-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3.2rem;
+  margin-top: 2rem;
+
+  @include breakpoint(900px) {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+}

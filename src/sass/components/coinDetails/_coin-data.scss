@@ -1,0 +1,41 @@
+.coin-data {
+  &__rank {
+    display: inline-block;
+    color: $color-gray-light;
+    background-color: $color-gray-dark;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__coin {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  &__price {
+    color: rgba(var($--theme-primary), 0.85);
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+
+  &__logo {
+    height: 2.8rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(var($--theme-primary), 0.85);
+  }
+
+  &__ticker {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(var($--theme-primary), 0.85);
+  }
+}

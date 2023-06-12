@@ -1,0 +1,72 @@
+.general-info {
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  &__show-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.6rem;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1rem;
+    }
+  }
+
+  &__box {
+    padding: 1.6rem;
+    background-color: rgba(var($--theme-primary), 0.05);
+    border-radius: 0.8rem;
+    border-left: 0.8rem solid rgba(var($--theme-primary), 0.24);
+
+    & div {
+      font-size: 2rem;
+      font-weight: 500;
+      color: rgba(var($--theme-primary), 0.87);
+    }
+
+    & span {
+      font-size: 1.4rem;
+      color: rgba(var($--theme-primary), 0.6);
+    }
+
+    &--green {
+      border-left: 0.8rem solid $color-green;
+    }
+
+    &--red {
+      border-left: 0.8rem solid $color-red;
+    }
+  }
+
+  &__percentage {
+    padding-left: 0.5rem;
+
+    &--green {
+      color: $color-green !important;
+    }
+
+    &--red {
+      color: $color-red !important;
+    }
+
+    @include breakpoint(1000px) {
+      display: block;
+      padding-left: 0;
+    }
+
+    @include md {
+      display: inline-block;
+      padding-left: 0.5rem;
+    }
+  }
+}

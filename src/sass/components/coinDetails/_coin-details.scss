@@ -1,0 +1,15 @@
+.coin-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 6rem;
+  padding-bottom: 3rem !important;
+
+  @include xl {
+    column-gap: 2.5rem;
+  }
+
+  @include breakpoint(900px) {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+}

@@ -1,0 +1,44 @@
+//----------ABSTRACT----------
+@import './abstract/variables';
+
+//----------THEMES----------
+@import './themes/themes';
+
+//----------BASE----------
+@import './base/base';
+@import './base/breakpoints';
+@import './base/queries';
+@import './base/typography';
+@import './base/utilities';
+
+//----------COMPONENTS----------
+@import './components/coinDetails/chart-section';
+@import './components/coinDetails/chart';
+@import './components/coinDetails/coin-data';
+@import './components/coinDetails/coin-details';
+@import './components/coinDetails/coin-info';
+@import './components/coinDetails/coin-progress';
+@import './components/coinDetails/coin-statistics';
+@import './components/coinDetails/coin-summary';
+
+@import './components/global/buttons';
+@import './components/global/error';
+@import './components/global/loader';
+@import './components/global/modal';
+@import './components/global/navigation';
+@import './components/global/settings';
+@import './components/global/summary';
+
+@import './components/home/dropdown';
+@import './components/home/general-info';
+@import './components/home/pagination';
+@import './components/home/searchbar';
+@import './components/home/table-row';
+@import './components/home/table';
+
+@import './components/notFound/notFound';
+
+//----------LAYOUT----------
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/header';

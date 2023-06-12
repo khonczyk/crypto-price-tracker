@@ -1,0 +1,45 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  color: rgba(var($--theme-primary), 0.87);
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  color: rgba(var($--theme-primary), 0.87);
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  color: rgba(var($--theme-primary), 0.6);
+  margin-bottom: 0.5rem;
+
+  & a {
+    color: $color-green;
+
+    &:hover {
+      color: $color-green-dark;
+    }
+  }
+}
+
+.list {
+  padding-left: 3rem;
+  font-size: 1.4rem;
+  color: rgba(var($--theme-primary), 0.6);
+  margin-bottom: 0.5rem;
+}
+
+.bold-span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(var($--theme-primary), 0.6);
+}

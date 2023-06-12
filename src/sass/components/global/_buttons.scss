@@ -1,0 +1,38 @@
+.btn-slider {
+  border: none;
+  text-align: left;
+  width: 2.8rem;
+  height: 1.6rem;
+  background: $color-gray;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &__circle {
+    display: inline-block;
+    background: $color-gray-light;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin: 0.2rem;
+    transform: translateX(0);
+    transition: all 0.3s;
+  }
+
+  &--active {
+    background: $color-green;
+  }
+
+  &--active &__circle {
+    transform: translateX(100%);
+  }
+}
+
+.btn-read-more {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(var($--theme-primary), 0.6);
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 0.5rem;
+}

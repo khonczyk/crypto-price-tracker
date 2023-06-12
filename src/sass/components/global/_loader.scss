@@ -1,0 +1,26 @@
+.loader {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  &__spinner {
+    border: 0.5rem solid rgba(var($--theme-primary), 0.5);
+    border-top: 0.5rem solid $color-green;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    animation: spin 1s ease-out infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
